@@ -46,17 +46,16 @@ body {
 /* ------- HEADER -------- */
 
 .page-header {
+
   border-bottom: 1px solid #ececec;
   background: #ffffff;
-    width: 1600px;
-      height: 80px;
-
+  width: 1600px;
+  height: 80px;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-
 }
 
 .nav-link {
@@ -64,6 +63,7 @@ body {
 }
 
 .section {
+  
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -75,6 +75,7 @@ body {
 }
 
 .logo-header {
+  margin-left: 215px;
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -84,9 +85,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
 
-  transition-property: color; 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-header:hover,
@@ -117,8 +116,6 @@ body {
   margin-left: 50px;
 }
 
-
-
 .site-nav .link {
   position: relative;
   display: block;
@@ -134,7 +131,6 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .site-nav .link::after {
   content: '';
   position: absolute;
@@ -143,18 +139,15 @@ body {
   display: block;
   width: 100%;
   height: 4px;
-  border-radius: 2px; 
+  border-radius: 2px;
   background-color: var(--accent-color);
   opacity: 0;
 }
 
-
-
 .site-nav .link:hover::after,
-.site-nav .link:focus::after { 
+.site-nav .link:focus::after {
   opacity: 1;
 }
-
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -166,6 +159,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+  display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -178,6 +172,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+  display: block;
    width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -191,6 +186,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+  display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -208,7 +204,6 @@ body {
 }
 
 .header-contact {
-
   display: flex;
   align-items: center;
   color: currentColor;
@@ -217,9 +212,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon {
@@ -243,15 +236,16 @@ body {
 
 /* ----- HERO ------- */
 
-.overlay {
-  /* max-width: 1600px;
+/* .overlay {
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(../images/img14.jpg);
   background-size: contain;
-  background-repeat: no repeat; */
-}
+  background-repeat: no repeat;
+ 
+} */
 
 .hero-section {
   text-align: center;
@@ -260,8 +254,8 @@ body {
 
   color: var(--white-text);
   /* background-color: var(--bg-color); */
-  max-width: 1600px;
-  min-height: 600px;
+  width: 1600px;
+  height: 600px;
   margin: 0 auto;
   background-image: linear-gradient(
       to right,
@@ -364,7 +358,6 @@ body {
   justify-content: space-between;
 }
 
-
 .business-thumb {
   position: relative;
   width: 370px;
@@ -374,17 +367,17 @@ body {
 .business-bg {
   position: absolute;
   bottom: 0;
-width: 100%;
-padding-top: 27px;
-padding-bottom: 27px;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
-      color: var(--white-text);
-      background-color: rgba(47, 48, 58, 0.8);;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-text);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* ----- TEAM ----- */
@@ -460,8 +453,8 @@ padding-bottom: 27px;
   color: #afb1b8;
 
   transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-svg {
@@ -508,7 +501,7 @@ padding-bottom: 27px;
   border: 1px solid #afb1b8;
   color: #afb1b8;
 
-  transition-property: color, border; 
+  transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -544,9 +537,7 @@ padding-bottom: 27px;
   font-size: 26px;
   line-height: 1.19;
 
-  transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-footer:hover,
@@ -559,7 +550,6 @@ padding-bottom: 27px;
 }
 
 .footer-address {
-
   color: var(--white-text);
   font-style: normal;
   font-weight: 400;
@@ -567,9 +557,7 @@ padding-bottom: 27px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link {
@@ -579,9 +567,7 @@ padding-bottom: 27px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel {
@@ -642,9 +628,7 @@ padding-bottom: 27px;
   align-items: center;
   justify-content: center;
 
-transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-icon:last-child {
@@ -653,9 +637,7 @@ transition-property: background-color;
 
 .icon-svg {
   fill: white;
-  transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:hover,
@@ -694,8 +676,8 @@ transition-property: background-color;
   border: 0px;
 
   transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -706,30 +688,27 @@ transition-property: background-color;
     0 3px 1px rgba(0, 0, 0, 0.01);
 }
 
-
-
-
-
 .list-images {
   display: flex;
   flex-wrap: wrap;
-    
-     
 }
 
 .item-image {
-position: relative;
- overflow: hidden;
+  position: relative;
+  overflow: hidden;
   margin-right: 30px;
   margin-bottom: 30px;
- 
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* .link-image {
+  display: inline-block;
+} */
 
 .item-image .img {
   display: block;
 }
-
 
 .item-image:nth-child(3n) {
   margin-right: 0;
@@ -739,32 +718,43 @@ position: relative;
   margin-bottom: 0;
 }
 
+
+
 .link-image::before {
   position: absolute;
-    display: inline-block;
-    content: 'Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.';
-   
-    width: 370px;
-    height: 294px;
-    background-color: rgba(33, 150, 243, 0.9);
-    opacity: 1;
-    padding: 63px 24px;
+  display: inline-block;
+  content: '';
+
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-before {
+  position: absolute;
+  content: '';
+
+  width: 322px;
+  height: 63px;
+  left: 0;
+  top: 0;
+
+  padding: 63px 24px;
   font-size: 18px;
-    line-height: 1.56;
+  line-height: 1.56;
   color: var(--white-text);
-    opacity: 0;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
 }
 
 .item-image:hover,
 .item-image:focus {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
-      0 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-
 
 .link-image:hover::before {
   opacity: 1;
@@ -773,7 +763,10 @@ position: relative;
 .item-image:hover .link-image::before {
   transform: translateY(0);
 }
-
+.item-image:hover .text-before {
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .border-item {
   padding: 20px 24px;
@@ -786,7 +779,7 @@ position: relative;
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #eeeeee;
-}
+} 
 
 .portfolio-title {
   margin-bottom: 4px;
@@ -802,3 +795,38 @@ position: relative;
   line-height: 1.88;
   color: var(--primary-text-color);
 }
+
+
+
+
+
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);;
+} */
+
+
+/* .backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+} */
+
+/* .modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+     0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+} */
+
+
