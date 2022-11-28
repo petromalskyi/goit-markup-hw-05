@@ -70,12 +70,12 @@
             для вашого бізнесу
           </h1>
 
-          <button type="button" class="hero-button">Замовити послугу</button>
-    
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
-      
       <!--                    QUALITY         -->
       <section class="section-quality section">
         <div class="container">
@@ -554,16 +554,17 @@
       </div>
     </footer>
 
-              <!-- МОДАЛЬНЕ ВІКНО -->
-     <!-- <div class="backdrop is-hidden"> 
+
+
+
+    <!-- МОДАЛЬНЕ ВІКНО -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-         <button  class="modal-btn"> 
-         
-        </button>
+        <button class="btn-modal" data-modal-close></button>
       </div>
-    </div> -->
-    
-    <!-- <script src="./js/modal.js"></script> -->
- 
+    </div>
+
+    <script src="./js/modal.js"></script>
+  
   </body>
 </html>
